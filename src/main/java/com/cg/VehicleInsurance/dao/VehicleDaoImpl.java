@@ -35,6 +35,12 @@ public class VehicleDaoImpl implements VehicleDao{
 	    			 cal.add(Calendar.DAY_OF_YEAR,365 );  
 	    			System.out.println("your insurance expires in:"+cal);
 	    		 }
+	    		 else if(vehicle.getInsurancePeriod()==2) {
+	    			 double insp=vehicle.getInsurancePeriod();
+	    			 System.out.println("Current Date: "+sdf.format(cal.getTime()));
+	    			 cal.add(Calendar.DAY_OF_YEAR,365*2 );  
+	    			System.out.println("your insurance expires in:"+cal);
+	    		 }
 	    	}
 	    
 	    }
